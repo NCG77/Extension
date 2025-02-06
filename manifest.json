@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Web Protection",
+  "version": "1.0",
+  "description": "Blocks malicious and adult content, enforces safe search.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "declarativeNetRequest",
+    "activeTab",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+  /* "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  } */
+}
